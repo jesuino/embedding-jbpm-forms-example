@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Test rest</title>
-    <script src="js/jbpm-forms-rest-integration.js" type="text/javascript"></script>
+    <script src="/business-central/js/jbpm-forms-rest-integration.js" type="text/javascript"></script>
     <script type="text/javascript">
 
         // Create a new instance to manage the interaction with the form
@@ -10,7 +10,7 @@
         // This function will load the process form specified on the inputs on the given div
         function showStartProcessForm(divId) {
             // obtain all the data needed to load the form
-            var hostUrl = document.getElementById('url').value;
+            var hostUrl = "/business-central";
             var deploymentId = document.getElementById('deploymentId').value;
             var processId = document.getElementById('processId').value;
 
@@ -76,10 +76,6 @@
     <tr>
         <td>ProcessId: </td>
         <td><input name="processId" id="processId" value="hiring"></td>
-    </tr>
-    <tr>
-        <td>Server URL: </td>
-        <td><input name="url" id="url" value="http://localhost:8080/kie-wb/"></td>
     </tr>
     <tr>
         <td colspan="2" align="center">
